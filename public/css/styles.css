@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #293462;
+}
+
+#navigation-container {
+  width: 100%;
+  border: 2px solid #f7be16;
+}
+
+.item-a img {
+  width: 90px;
+}
+
+.item-a {
+}
+
+.item-b img {
+  padding: 0 20%;
+}
+
+#homepage-container {
+  border: 2px solid #f7be16;
+  margin: 10%;
+}
+
+.credit-text {
+  font-size: 10px;
+  text-align: center;
+}
