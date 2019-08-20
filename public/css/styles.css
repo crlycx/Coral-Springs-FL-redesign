@@ -5,25 +5,116 @@ body {
 }
 
 #navigation-container {
+  background-color: #ffffff;
+  border-bottom: 10px solid #016A9D;
   width: 100%;
-  border: 2px solid #f7be16;
+  padding: 2% 0;
 }
 
-.item-a img {
+#navigation-content {
+  display: table;
+}
+
+#menu {
+  display: none;
+}
+
+.nav-content {
+  display: none;
+}
+
+.nav-content ul {
+  list-style-type: none;
+}
+
+#item-a img {
   width: 90px;
 }
 
-.item-a {
+#item-a {
+  padding-left: 4%;
+  width: 42%;
 }
 
-.item-b img {
+#item-a label {
+  display: block;
+}
+
+#item-b {
+}
+
+#item-b img {
   padding: 0 20%;
+  align-items: center;
 }
 
 #homepage-container {
-  border: 2px solid #f7be16;
-  margin: 10%;
+  /* border: 2px solid #f7be16; */
+  margin: 0;
 }
+
+/* ----------HOMEPAGE BUTTONS---------- */
+
+.homepage-button-style {
+  width: 100%;
+  height: 375px;
+  color: #fffffe;
+  font-size: 4rem;
+  border-style: none;
+  border-bottom: 2px solid #fffffe;
+}
+
+button[name="utility-billing"] {
+  background-color: #293462;
+}
+
+button[name="parks-and-recreation"] {
+  background-color: #FB9B1F;
+}
+
+button[name="library"] {
+  background-color: #216583;
+}
+
+button[name="events"] {
+  background-color: #00818a;
+}
+
+button[name="economic-development"] {
+  background-color: #f7be16;
+}
+
+/* ----------EVENT CARDS---------- */
+
+#upcoming-events {
+  padding-top: 3%;
+}
+
+#upcoming-events h2 {
+  padding-left: 2%;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: #fffffe;
+}
+
+#upcoming-events img {
+  width: 100%;
+}
+
+.card-container{
+  width:100%;
+  background-color: #6c7b95;
+  padding: 0.5%;
+  margin-bottom: 1%;
+}
+
+#event-a {
+  /* background-color: #6c7b95; */
+}
+
+
+/* ----------FOOTER---------- */
 
 .credit-text {
   font-size: 10px;

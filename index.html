@@ -4,41 +4,97 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="public/css/styles.css">
+  <script type="text/javascript" src="index.js">
+
+  </script>
   <title>Coral Springs, FL</title>
 </head>
-
+<!-- start body -->
 <body>
+
   <div id="navigation-container">
     <table id="navigation-content">
       <tr>
-        <td class="item-a">
-          <img id="menu-button" src="public/images/arrow-point-to-right.png" alt="">
+        <td id="item-a">
+          <input type="checkbox" id="menu" onclick="openMenu()">
+          <label for="menu"><img id="menu-button" src="public/images/arrow-point-to-right.png" alt=""></label>
+          <div id="menu-content" class="nav-content">
+            <ul>
+              <li>home</li>
+              <li>living</li>
+              <li>visiting</li>
+              <li>for business</li>
+              <li>government</li>
+              <li>citizen help</li>
+            </ul>
+          </div>
         </td>
-        <td class="item-b">
+        <td id="item-b">
           <img src="public/images/logo-full.png" alt="">
         </td>
       </tr>
     </table>
   </div>
 
-  <div id="homepage-container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut tellus elementum sagittis vitae. Risus sed vulputate odio ut enim. Aliquam purus sit amet luctus venenatis lectus magna fringilla. Lacinia quis vel eros
-      donec ac odio. Vel facilisis volutpat est velit egestas dui id. Tortor vitae purus faucibus ornare suspendisse sed. Sit amet luctus venenatis lectus. Sed elementum tempus egestas sed. Justo donec enim diam vulputate ut pharetra sit amet
-      aliquam. Non blandit massa enim nec dui nunc mattis. Imperdiet dui accumsan sit amet nulla facilisi morbi. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Morbi tincidunt augue interdum velit euismod in.
 
-      Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Purus faucibus ornare suspendisse sed nisi lacus sed viverra. Amet porttitor eget dolor morbi non arcu risus quis. At risus viverra adipiscing at in. Blandit massa enim nec dui nunc
-      mattis enim ut. Viverra tellus in hac habitasse platea dictumst vestibulum. In eu mi bibendum neque egestas congue quisque. Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Blandit massa enim nec dui nunc mattis enim ut
-      tellus. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Nisl condimentum id venenatis a. Nullam ac tortor vitae purus. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Varius quam quisque id diam
-      vel quam. Eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Sollicitudin aliquam ultrices sagittis orci a. Volutpat commodo sed egestas egestas fringilla phasellus.
-      Pretium viverra suspendisse potenti nullam.</p>
+  <div id="homepage-container">
+    <div id="homepage-buttons">
+      <button type="button" name="utility-billing" class="homepage-button-style">Utility Billing</button>
+      <button type="button" name="parks-and-recreation" class="homepage-button-style">Parks and Recreation</button>
+      <button type="button" name="library" class="homepage-button-style">Library</button>
+      <button type="button" name="events" class="homepage-button-style">Events</button>
+      <button type="button" name="economic-development" class="homepage-button-style">Economic Development</button>
+    </div>
+
+    <div id="upcoming-events">
+      <h2>UPCOMING EVENTS</h2>
+      <div class="card-container">
+        <div id="event-a">
+          <div class="event-picture">
+            <img src="public/images/girl-at-playground.jpg" alt="Girl Going Down Slide at Daytime Photo by nik radzi on Unsplash">
+          </div>
+          <div class="event-text">
+            <span class="event-title"><p>Labor Day BBQ</p></span>
+            <span class="event-date"><p>Monday, Sept. 2, 2019</p></span>
+            <span class="event-time"><p>12 - 4pm</p></span>
+            <span class="event-location"><p>Mullins Park</p></span>
+            <span class="event-blurb"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></span>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div id="event-b">
+          <div class="event-picture">
+            <img src="public/images/shopping-mall.jpg" alt="People in Shopping Mall Photo by Marcin Kempa">
+          </div>
+          <div class="event-text">
+            <span class="event-title"><p>Mall Closed for Renovations</p></span>
+            <span class="event-date"><p>Sept. 3 - 5, 2019</p></span>
+            <span class="event-time"><p>Normal hours resume Friday</p></span>
+            <span class="event-location"><p>Coral Square Mall</p></span>
+            <span class="event-blurb"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></span>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div id="event-c">
+
+        </div>
+      </div>
+    </div>
   </div>
+
 
   <footer>
     <div class="credit-text">
       <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
           href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </div>
+    <div>
+      Photo by Marcin Kempa on Unsplash
+    </div>
+    <div>
+      Photo by nik radzi on Unsplash
     </div>
   </footer>
 
