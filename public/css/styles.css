@@ -102,12 +102,20 @@ button[name="economic-development"] {
   width: 100%;
 }
 
-.card-container{
+.card-container {
   width:100%;
   background-color: #6c7b95;
   padding: 0.5%;
   margin-bottom: 1%;
 }
+
+/* .event-text ul {
+  text-align: center;
+}
+
+.event-text li {
+  display: inline-block;
+} */
 
 #event-a {
   /* background-color: #6c7b95; */
