@@ -103,6 +103,7 @@ button[name="economic-development"] {
 }
 
 .card-container {
+  font-family: 'Montserrat', sans-serif;
   width:100%;
   background-color: #6c7b95;
   padding: 0.5%;
