@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #293462;
+  background-color: #293462 !important;
 }
 
 #navigation-container {
@@ -87,43 +87,57 @@ button[name="economic-development"] {
 /* ----------EVENT CARDS---------- */
 
 #upcoming-events {
-  padding-top: 3%;
+  padding-top: 7%;
 }
 
 #upcoming-events h2 {
   padding-left: 2%;
   font-family: sans-serif;
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 3.7rem;
   color: #fffffe;
 }
 
-#upcoming-events img {
-  width: 100%;
+.card-body {
+  background: rgba(77, 77, 77, 0.6);
+  font-size: 1.1rem;
 }
 
-.card-container {
-  font-family: 'Montserrat', sans-serif;
-  width:100%;
-  background-color: #6c7b95;
-  padding: 0.5%;
-  margin-bottom: 1%;
+/* ----------SOCIAL MEDIA ICONS---------- */
+
+#social-media {
+  padding-top: 7%;
+  padding-bottom: 2%;
 }
 
-/* .event-text ul {
-  text-align: center;
+#social-media h2 {
+  padding-left: 2%;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 3.7rem;
+  color: #fffffe;
 }
 
-.event-text li {
+ul.social-media-icons {
+  list-style-type: none;
+  text-align: center
+}
+
+ul.social-media-icons li {
   display: inline-block;
-} */
+}
 
-#event-a {
-  /* background-color: #6c7b95; */
+#social-media img {
+  width: 230px;
+  padding: 5% 15% 0;
 }
 
 
 /* ----------FOOTER---------- */
+
+#footer {
+  border-top: 2px solid #fffffe;
+}
 
 .credit-text {
   font-size: 10px;

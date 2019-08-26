@@ -11,3 +11,5 @@
 //     menu.style.display = "none";
 //   }
 // }
+
+// Bootstrap JS changes
