@@ -1,0 +1,193 @@
+/* ----------OVER 500 CSS---------- */
+#homepage-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+button[name="utility-billing"] {
+  background-color: #293462;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  border-right: 2px solid #fffffe;
+}
+
+button[name="parks-and-recreation"] {
+  background-color: #FB9B1F;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+button[name="library"] {
+  background-color: #216583;
+  grid-column: 1 / span 2;
+  grid-row: 2 / 3;
+}
+
+button[name="events"] {
+  background-color: #00818a;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  border-right: 2px solid #fffffe;
+}
+
+button[name="economic-development"] {
+  background-color: #f7be16;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+/* ----------ALL SCREEN SIZE CSS---------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #293462 !important;
+}
+
+div#homepage-picture {
+  display: none;
+}
+
+div#homepage-contact {
+  display: none;
+}
+
+#navigation-container {
+  background-color: #ffffff;
+  border-bottom: 10px solid #016A9D;
+  width: 100%;
+  padding: 2% 0;
+}
+
+#navigation-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#menu {
+  display: none;
+}
+
+.nav-content {
+  display: none;
+}
+
+.nav-content ul {
+  list-style-type: none;
+}
+
+#item-a img {
+  width: 90px;
+}
+
+#item-a {
+  padding-top: 7%;
+  padding-left: 4%;
+  width: 42%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#item-a label {
+  display: block;
+}
+
+#item-b {
+  grid-column: 2 / span 2;
+  grid-row: 1 / 2;
+}
+
+#item-b img {
+  padding: 0;
+  align-items: center;
+}
+
+#homepage-container {
+  margin: 0;
+}
+
+/* ----------HOMEPAGE BUTTONS---------- */
+
+.homepage-button-style {
+  width: 100%;
+  height: 375px;
+  color: #fffffe;
+  font-size: 2.5rem;
+  border-style: none;
+  border-bottom: 2px solid #fffffe;
+}
+
+.homepage-button-icons {
+  width: 20%;
+  padding: 1%;
+}
+
+/* ----------EVENT CARDS---------- */
+
+#upcoming-events {
+  padding-top: 7%;
+}
+
+#upcoming-events h2 {
+  padding-left: 2%;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 3.7rem;
+  color: #fffffe;
+}
+
+.card-body {
+  background: rgba(77, 77, 77, 0.6);
+  font-size: 1.1rem;
+}
+
+/* ----------SOCIAL MEDIA ICONS---------- */
+
+#social-media {
+  padding-top: 7%;
+  padding-bottom: 2%;
+}
+
+#social-media h2 {
+  padding-left: 2%;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 3.7rem;
+  color: #fffffe;
+}
+
+ul.social-media-icons {
+  list-style-type: none;
+  text-align: center
+}
+
+ul.social-media-icons li {
+  display: inline-block;
+}
+
+#social-media img {
+  width: 230px;
+  padding: 5% 15% 0;
+}
+
+
+/* ----------FOOTER---------- */
+
+#footer {
+  border-top: 2px solid #fffffe;
+}
+
+.credit-text {
+  font-size: 10px;
+  text-align: center;
+}
+
+.credit-text li {
+  display: inline-block;
+}

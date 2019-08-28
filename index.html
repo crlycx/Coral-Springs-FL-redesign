@@ -6,7 +6,8 @@
 
   <!-- external css -->
   <link rel="stylesheet" href="public/css/styles.css">
-  <link rel="stylesheet" media="screen and (min-width:600px)" href="/css/over600.css">
+  <link rel="stylesheet" media="screen and (min-device-width:500px)" href="public/css/over500.css">
+  <link rel="stylesheet" media="screen and (min-width:1000px)" href="public/css/over1000.css">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Google Fonts -->
@@ -21,9 +22,8 @@
 
   <section id="navigation-container">
 
-    <table id="navigation-content">
-      <tr>
-        <td id="item-a">
+    <div id="navigation-content">
+        <div id="item-a">
           <input type="checkbox" id="menu" onclick="openMenu()">
           <label for="menu"><img id="menu-button" src="public/images/arrow-point-to-right.png" alt=""></label>
           <div id="menu-content" class="nav-content">
@@ -36,24 +36,37 @@
               <li>citizen help</li>
             </ul>
           </div>
-        </td>
-        <td id="item-b">
+        </div>
+        <div id="item-b">
           <img src="public/images/logo-full.png" alt="">
-        </td>
-      </tr>
-    </table>
+        </div>
+    </div>
 
   </section>
 
 
   <section id="homepage-container">
 
+    <div id="homepage-picture">
+      <img src="public/images/downtown-coral-springs.jpg" alt="Photo of  event in downtown Coral Springs">
+    </div>
     <div id="homepage-buttons">
-      <button type="button" name="utility-billing" class="homepage-button-style">Utility Billing</button>
-      <button type="button" name="parks-and-recreation" class="homepage-button-style">Parks and Recreation</button>
-      <button type="button" name="library" class="homepage-button-style">Library</button>
-      <button type="button" name="events" class="homepage-button-style">Events</button>
-      <button type="button" name="economic-development" class="homepage-button-style">Economic Development</button>
+      <button type="button" name="utility-billing" class="homepage-button-style"><img src="public/images/trashcan.svg" class="homepage-button-icons" alt="trash can icon"><br>Utility Billing</button>
+      <button type="button" name="parks-and-recreation" class="homepage-button-style"><img src="public/images/park.svg" class="homepage-button-icons" alt="park icon"><br>Parks and Recreation</button>
+      <button type="button" name="library" class="homepage-button-style"><img src="public/images/open-book.svg" class="homepage-button-icons" alt="open book icon"><br>Library</button>
+      <button type="button" name="events" class="homepage-button-style"><img src="public/images/food-truck.svg" class="homepage-button-icons" alt="food truck icon"><br>Events</button>
+      <button type="button" name="economic-development" class="homepage-button-style"><img src="public/images/wrench-screwdriver.svg" class="homepage-button-icons" alt="wrench and screwdriver icon"><br>Economic Development</button>
+      <div id="homepage-contact">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="upcoming-events">
@@ -93,7 +106,7 @@
         <img src="public/images/beach-by-drone.jpg" class="d-block w-100" alt="Beach in Australia Shot by Drone Photo by Shawnn Tan on Unsplash">
         <div class="carousel-caption d-none d-md-block">
           <div class="card-body">
-            <h5 class="card-title">Annual Beach Clea Up</h5>
+            <h5 class="card-title">Annual Beach Clean Up</h5>
             <p class="card-text">Saturday, Oct. 12  |  Ft. Lauderdale Beach<br>
             Get involved with your friends and neighbors for the annual clean-up at the beach.</p>
             <a href="#" class="btn btn-primary">Read more</a>
@@ -128,15 +141,20 @@
 
   <section id="footer">
     <div class="credit-text">
-      <li></li>
-      <li>Photo by Marcin Kempa on Unsplash</li>
-      <li>Photo by nik radzi on Unsplash</li>
-      <!-- <li>Photo by Bagus Hernawan on Unsplash</li> -->
-      <li>Photo by Shawnn Tan on Unsplash</li>
-      <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
-      <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
-      <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
-      <li>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+      <ul>
+        <li>Photo by Marcin Kempa on Unsplash</li>
+        <li>Photo by nik radzi on Unsplash</li>
+        <!-- <li>Photo by Bagus Hernawan on Unsplash</li> -->
+        <li>Photo by Shawnn Tan on Unsplash</li>
+        <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+        <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+        <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+        <li>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+        <li>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+        <li>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+        <li>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+        <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+      </ul>
     </div>
   </section>
 

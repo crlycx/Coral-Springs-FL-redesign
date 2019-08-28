@@ -4,6 +4,14 @@ body {
   background-color: #293462 !important;
 }
 
+div#homepage-picture {
+  display: none;
+}
+
+div#homepage-contact {
+  display: none;
+}
+
 #navigation-container {
   background-color: #ffffff;
   border-bottom: 10px solid #016A9D;
@@ -12,7 +20,11 @@ body {
 }
 
 #navigation-content {
-  display: table;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 #menu {
@@ -34,6 +46,8 @@ body {
 #item-a {
   padding-left: 4%;
   width: 42%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
 #item-a label {
@@ -41,15 +55,16 @@ body {
 }
 
 #item-b {
+  grid-column: 2 / span 2;
+  grid-row: 1 / 2;
 }
 
 #item-b img {
-  padding: 0 20%;
+  padding: 0;
   align-items: center;
 }
 
 #homepage-container {
-  /* border: 2px solid #f7be16; */
   margin: 0;
 }
 
@@ -63,6 +78,7 @@ body {
   border-style: none;
   border-bottom: 2px solid #fffffe;
 }
+
 
 button[name="utility-billing"] {
   background-color: #293462;
@@ -82,6 +98,11 @@ button[name="events"] {
 
 button[name="economic-development"] {
   background-color: #f7be16;
+}
+
+.homepage-button-icons {
+  width: 15%;
+  padding: 1%;
 }
 
 /* ----------EVENT CARDS---------- */
@@ -142,4 +163,8 @@ ul.social-media-icons li {
 .credit-text {
   font-size: 10px;
   text-align: center;
+}
+
+.credit-text li {
+  display: inline-block;
 }
