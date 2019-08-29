@@ -17,6 +17,11 @@ div#homepage-picture img {
   padding: 0 5%;
 }
 
+div#over1000-navbar {
+  display: block;
+  width: auto;
+}
+
 div#homepage-contact {
   display: grid;
   grid-column: 3 / 4;

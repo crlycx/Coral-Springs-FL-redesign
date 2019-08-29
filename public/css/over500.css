@@ -55,6 +55,10 @@ div#homepage-contact {
   display: none;
 }
 
+div#over1000-navbar {
+  display: none;
+}
+
 #navigation-container {
   background-color: #ffffff;
   border-bottom: 10px solid #016A9D;
