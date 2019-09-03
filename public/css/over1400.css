@@ -1,3 +1,25 @@
+/* ----------OVER 1400 CSS---------- */
+
+.navbar-collapse li {
+  margin-left: 34%;
+}
+
+.navbar-collapse {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+#item-b img {
+  padding: 0;
+  padding-left: 10%;
+  align-items: center;
+}
+
+#social-media img {
+  width: 250px;
+  padding: 9% 12% 0;
+}
+
 /* ----------OVER 1000 CSS---------- */
 #homepage-buttons {
   display: grid;
@@ -27,15 +49,6 @@ div#homepage-contact {
   grid-row: 2 / 3;
 }
 
-.navbar-collapse {
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-.navbar-collapse li {
-  margin-left: 22.5%;
-}
-
 #upcoming-events {
   padding-top: 25%;
 }
@@ -43,11 +56,6 @@ div#homepage-contact {
 #social-media {
   padding-top: 25%;
   padding-bottom: 2%;
-}
-
-#social-media img {
-  width: 200px;
-  padding: 4% 8% 0;
 }
 
 /* ----------OVER 500 CSS---------- */
@@ -147,11 +155,6 @@ body {
 #item-b {
   grid-column: 2 / span 2;
   grid-row: 1 / 2;
-}
-
-#item-b img {
-  padding: 0;
-  align-items: center;
 }
 
 /* ----------HOMEPAGE & BUTTONS---------- */
